@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preloa" href="css/normalize.css" as="style">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet"> <!--El "rel" es la relacion que tiene con el codigo en este caso una hoja de estilos-->
+</head>
+<body>
+    <main class = "contenedor-registro sombra">
+
+        <h1>Registro</h1>
+
+        <div class="campo">
+            <input class="input-text" type="text" placeholder="Nombres">
+        </div>
+
+        <div class="campo">
+            <input class="input-text" type="text" placeholder="Apellidos">
+        </div>
+
+        <div class="campo">
+            <input class="input-text" type="text" placeholder="Direccion  de correo">
+        </div>
+
+        <div class="campo">
+            <input class="input-text" type="text" placeholder="Contraseña">
+        </div>
+
+        <div class="campo">
+            <input class="input-text" type="text" placeholder="Verificar contraseña">
+        </div>
+
+        <div class="servicio">
+            <button class="botonRegistro" id="botonRegistrarse">Registrarse</button>
+
+            <button class="botonRegistro" id="botonCancelar">Cancelar</button>
+
+            <script>
+                var boton = document.getElementById('botonCancelar');
+                boton.addEventListener('click', funcition = () =>{window.location.href = 'index.html'})
+
+                var boton = document.getElementById('botonRegistrarse');
+                boton.addEventListener('click', funcition = () =>{window.location.href = 'index.html'})
+            </script>
+        </div>
+
+    </main>
+</body>
+</html>

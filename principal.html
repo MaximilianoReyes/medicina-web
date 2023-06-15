@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preloa" href="css/normalize.css" as="style">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet"> <!--El "rel" es la relacion que tiene con el codigo en este caso una hoja de estilos-->
+</head>
+<body>
+    <section class="contenedor-principal">
+      
+        <section class="contenedor-izquierdo">
+
+            <button class="boton-usuario width-usuario button-with-image imagen-usuario">Maximiliano Reyes</button>
+    
+            <button id="myButton" class="boton-usuario color-agregar">+ Nueva tarea</button>
+
+            <div id="myPopup" class="popup">
+                <div class="popup-content">
+                  <!-- Contenido de la ventana emergente -->
+                  <form id="myForm">
+                    <input type="text" id="taskInput" placeholder="Introducir tarea">
+                    <button type="submit">Enviar</button>
+                  </form>
+                </div>
+            </div>
+    
+            <nav class="navegacion-principal">
+                <a class="boton-usuario" href="principal.html">Tareas</a>
+                <a class="boton-usuario" href="#">Notas</a>
+                <a class="boton-usuario" href="patrimonio.html">Patrimonio</a>
+                <a class="boton-usuario" href="#">Papelera</a>
+                <a class="boton-usuario" href="index.html">Salir</a>
+            </nav>
+
+        </section>
+    
+        <section class="contenedor-centro">
+
+            <ul id="taskList" class="diseño-tareas"></ul>
+
+        </section>
+        
+        <section class="contenedor-derecho">
+            <textarea class="notas"></textarea>
+            <button class="boton-usuario extras">Guardar</button>
+        </section>
+        
+    </section>
+
+    <script>
+        const button = document.getElementById('myButton');
+        const popup = document.getElementById('myPopup');
+        const form = document.getElementById('myForm');
+        const taskInput = document.getElementById('taskInput');
+        const taskList = document.getElementById('taskList');
+
+        let counter = 1; 
+
+        button.addEventListener('click', () => {
+          popup.style.display = 'block';
+        });
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const task = taskInput.value;
+            if (task) {
+                const listItem = document.createElement('li');
+                listItem.textContent = task;
+                listItem.id = `task-${counter}`;
+                taskList.appendChild(listItem);
+                //taskList.style.display = 'block';
+                taskInput.value = '';
+                counter++;
+            }
+        });
+    
+        popup.addEventListener('click', (event) => {
+          if (event.target === popup) {
+            popup.style.display = 'none';
+          }
+        });
+      </script>
+
+</body>
+</html>

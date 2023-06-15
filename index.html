@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preloa" href="css/normalize.css" as="style">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="preload" href="/css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet"> <!--El "rel" es la relacion que tiene con el codigo en este caso una hoja de estilos-->
+</head>
+<body>
+    <main class="contenedor sombra">
+
+        <h1>QualiNotes</h1>
+
+        <button class="botonUcol button-with-image imagen-ucol">Continuar con UCOL</button>
+
+
+        <h3>------------------- Or -------------------</h3>
+        
+        <div class="campo">
+
+            <input class="input-text" type="text" placeholder="Direccion  de correo">
+
+        </div>
+
+        <button class="boton" id="botonRegistro">Continuar</button>
+
+        <script>
+                var boton = document.getElementById('botonRegistro');
+                boton.addEventListener('click', funcition = () =>{window.location.href = 'principal.html'})
+        </script>
+
+        <h3>¿Aun no tiene una cuenta?</h3>
+
+        <a style="color: #8520DA" href="registro.html">Registrate aqui</a>
+    
+    </main>
+</body>
+</html>
