@@ -1,3 +1,4 @@
+/* Global */
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
@@ -5,44 +6,44 @@
     --secundario: #0097A7;
     --gris: #757575;
     --grisClaro: #DFE9F3;
-  }
-  
-  html {
+}
+
+html {
     font-size: 62.5%;
     box-sizing: border-box; /* Hack del Box Model */
-  }
-  
-  *, *:before, *:after {
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 3.8rem;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 2.8rem;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-size: 1.8rem;
-  }
-  
-  h1, h2, h3 {
+}
+
+h1,h2,h3 {
     text-align: center;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  
-  body {
+}
+
+body {
     font-size: 16px; /* 1rem = 10px */
     font-family: 'Krub', sans-serif;
     background-image: linear-gradient(to bottom, #f5f7fa 0%, #c3cfe2 175%);
-  }
-  
-  .boton {
+}
+
+.boton {
     background-color: #8520DA;
     color: #ffffff;
     padding: 1rem 3rem;
@@ -54,9 +55,9 @@
     text-align: center;
     border: none;
     margin: 2rem 5rem 2rem 5rem;
-  }
-  
-  .botonUcol {
+}
+
+.botonUcol {
     background-color: #ffffff;
     padding: 1rem 3rem;
     font-size: 2rem;
@@ -67,63 +68,63 @@
     text-align: center;
     border: 1;
     margin: 2rem 5rem 1rem 5rem;
-  }
-  
-  .width-usuario {
+}
+
+.width-usuario {
     width: 80%;
     background-color: #ffffff;
     text-align: center;
     padding: 1rem 3rem;
-  }
-  
-  .color-agregar {
+}
+
+.color-agregar {
     background-color: #8520DA;
     color: #ffffff;
     width: 90%;
     text-align: left;
     padding: 1rem 1rem;
-  }
-  
-  .extras {
+}
+
+.extras {
     background-color: #8520DA;
     color: #ffffff;
     width: 93%;
     text-align: center;
     padding: 1rem 1rem;
-  }
-  
-  .boton-usuario {
+}
+
+.boton-usuario {
     font-size: 2rem;
     text-decoration: none;
     font-size: 20;
     border-radius: .5rem;
     border: 0;
     margin: 1rem;
-  }
-  
-  .boton:hover {
+}
+
+.boton:hover {
     cursor: pointer;
-  }
-  
-  .imagen-ucol {
+}
+
+.imagen-ucol {
     background-image: url(../img/ucol.png);
     padding-left: 20px; /* Espacio para la imagen */
     background-position: 4rem;
     background-repeat: no-repeat;
-  }
-  
-  .imagen-usuario {
+}
+
+.imagen-usuario {
     background-image: url(../img/usuario.png);
     padding-right: .1rem; /* Espacio para la imagen */
     background-position: 0.5rem;
     background-repeat: no-repeat;
-  }
-  
-  .button-with-image {
+}
+
+.button-with-image {
     background-size: 32px 32px; /* Tamaño deseado de la imagen */
-  }
-  
-  .botonRegistro {
+}
+
+.botonRegistro {
     background-color: #8520DA;
     color: #ffffff;
     padding: 1rem 3rem;
@@ -135,69 +136,70 @@
     text-align: center;
     border: none;
     margin: 2rem 1.4rem 2rem 1.4rem;
-  }
-  
-  .contenedor {
+}
+
+.contenedor {
     max-width: 60rem;
-    margin: 150px auto;
+    margin: 150 auto;  
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  
-  .contenedor-registro {
+}
+
+.contenedor-registro {
     max-width: 60rem;
-    margin: 100px auto 150px auto;
+    margin: 100 auto 150 auto;  
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  
-  .sombra { /* CSS matic */
+}
+
+.sombra { /* CSS matic */
     -webkit-box-shadow: 0px 5px 15px 0px rgba(82,82,82,1);
     -moz-box-shadow: 0px 5px 15px 0px rgba(82,82,82,1);
     box-shadow: 0px 5px 15px 0px rgba(82,82,82,1);
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 1rem;
-  }
-  
-  .campo {
+}
+
+.campo {
     color: #ffffff;
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
-    margin: 0 100px 0 100px;
-  }
-  
-  .input-text {
+    margin: 0 100 0 100;
+}
+
+.input-text {
     width: 100%;
     border: 1;
     padding: 1.5rem;
     border-radius: .5rem;
     margin-bottom: 1rem;
-  }
-  
-  .servicio {
+}
+
+.servicio {
     display: flex;
     justify-content: center;
-  }
-  
-  .navegacion-principal {
+}
+
+.navegacion-principal {
     display: flex;
     flex-direction: column;
-  }
-  
-  .navegacion-principal a {
+}
+
+.navegacion-principal a {
     color: #000000;
-  }
-  
-  .contenedor-principal {
+}
+
+.contenedor-principal {
     display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  .contenedor-izquierdo {
+    grid-template-columns: 1fr 2fr 1fr; /* Una columna para cada contenedor */
+}
+
+.contenedor-izquierdo {
+    grid-column: 1;
     max-width: 30rem;
     max-height: 74rem;
     padding-bottom: 74rem;
@@ -205,9 +207,10 @@
     -moz-box-shadow: 0px 5px 15px 0px rgba(82,82,82,1);
     box-shadow: 0px 5px 15px 0px rgba(82,82,82,1);
     background-color: #ffffff;
-  }
-  
-  .contenedor-centro {
+}
+
+.contenedor-centro {
+    grid-column: 2;
     max-width: 74rem;
     max-height: 74rem;
     padding-bottom: 74rem;
@@ -215,9 +218,10 @@
     -moz-box-shadow: 0px 5px 15px 0px rgba(82,82,82,1);
     box-shadow: 0px 5px 15px 0px rgba(82,82,82,1);
     background-color: #ffffff;
-  }
-  
-  .contenedor-derecho {
+}
+
+.contenedor-derecho {
+    grid-column: 3;
     max-width: 30rem;
     max-height: 74rem;
     padding-bottom: 74rem;
@@ -226,43 +230,40 @@
     -moz-box-shadow: 0px 5px 15px 0px rgba(82,82,82,1);
     box-shadow: 0px 5px 15px 0px rgba(82,82,82,1);
     background-color: #ffffff;
-  }
-  .notas {
+}
+
+.notas {
     width: 100%;
     height: 67rem;
     border: none;
     outline: none;
     resize: none;
     padding: 1.5rem;
-  }
-  
-  
-  .tareas {
+}
+
+.tareas {
     display: flex;
     align-items: center;
     background-color: #DBD8DF;
     text-align: left;
-    width: 100%;
+    width: 67rem;
     margin: 2rem 3rem;
     border-radius: 1rem;
     padding: 1rem 1rem;
     border: none;
-  }
-  
-  
-  .margin-extra {
+}
+
+.margin-extra {
     margin-left: 1rem;
-  }
-  
-  
-  .tabla {
+}
+
+.tabla {
     margin: 0 auto; /* Para centrar la tabla horizontalmente */
-    text-align: center;
-    width: 100%;
-  }
-  
-  
-  .popup {
+    text-align: left;
+    width: 74rem;
+}
+
+.popup {
     display: none;
     position: fixed;
     top: 0;
@@ -270,103 +271,63 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  
-  .popup-content {
+}
+
+.popup-content {
     background-color: #fff;
     width: 30rem;
     margin: 8rem auto;
     padding: 20px;
     border-radius: 1rem;
-  }
-  
-  
-  .diseño-tareas {
+}
+
+.diseño-tareas {
     margin: 2rem 1rem;
-    width: 100%;
+    width: 67rem;
     border-radius: 1rem;
     padding: 1rem 0 1rem 3rem;
-  }
-  
-  li {
+}
+
+li {
     background-color: #DBD8DF;
     margin: 2rem auto;
-    width: 100%;
+    width: 67rem;
     border-radius: 1rem;
-    padding: 1rem 1rem;
-  }
-  
-  /* Modificaciones para que sea responsive */
-  
-  @media (max-width: 768px) {
+    padding: 1rem 1rem
+}
+
+@media (max-width: 768px) {
     h1 {
-      font-size: 2.4rem;
-    }
-  
-    h2 {
-      font-size: 2rem;
-    }
-  
-    h3 {
-      font-size: 1.6rem;
-    }
-  
-    .boton, .botonUcol, .botonRegistro {
-      width: 100%;
-      margin: 2rem 0;
-    }
-  
-    .contenedor, .contenedor-registro {
-      margin: 100px auto;
-    }
-  
-    .contenedor-izquierdo, .contenedor-centro, .contenedor-derecho {
-      max-width: none;
-      max-height: none;
-      padding-bottom: 0;
-      margin-left: 0;
-    }
-  
-    .campo {
-      margin: 0;
-    }
-  
-    .input-text {
-      margin-bottom: 0.5rem;
-    }
-  
-    .servicio {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navegacion-principal a {
-      margin-bottom: 1rem;
-    }
-  
-    .notas {
-      height: auto;
-    }
-  
-    .tareas {
-      flex-direction: column;
-      margin: 2rem 0;
-    }
-  
-    .tabla {
-      margin: 0;
-    }
-  
-    .popup-content {
-      width: 90%;
-    }
-  
-    .diseño-tareas {
-      padding-left: 1rem;
-    }
-  
-    li {
-      margin: 1rem auto;
-    }
-  }
+        font-size: 2.4rem;
+      }
+    
+      h2 {
+        font-size: 2rem;
+      }
+    
+      h3 {
+        font-size: 1.6rem;
+      }
+    
+      .boton, .botonUcol, .botonRegistro {
+        width: 100%;
+        margin: 1rem 0;
+      }
+
+      .contenedor, .contenedor-registro {
+        margin: 100px auto;
+      }
+
+      .campo {
+        margin: 0;
+      }
+    
+      .input-text {
+        margin-bottom: 0.5rem;
+      }
+    
+      .servicio {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+}
