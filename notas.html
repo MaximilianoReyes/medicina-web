@@ -12,7 +12,7 @@
     <link href="css/styles.css" rel="stylesheet"> <!--El "rel" es la relacion que tiene con el codigo en este caso una hoja de estilos-->
 </head>
 <body>
-    <section class="contenedor-principal">
+    <section class="contenedor-principal-notas">
       
         <section class="contenedor-izquierdo">
 
@@ -31,8 +31,8 @@
             </div>
     
             <nav class="navegacion-principal">
-                <a class="boton-usuario" href="tareas.html">Tareas</a>
-                <a class="boton-usuario" href="notas.html">Notas</a>
+                <a class="boton-usuario" href="principal.html">Áreas</a>
+                <a class="boton-usuario" href="#">Notas</a>
                 <a class="boton-usuario" href="patrimonio.html">Patrimonio</a>
                 <a class="boton-usuario" href="#">Papelera</a>
                 <a class="boton-usuario" href="index.html">Salir</a>
@@ -40,10 +40,15 @@
 
         </section>
     
-        <section class="contenedor-centro">
+        <section class="contenedor-centro-notas">
 
             <ul id="taskList" class="diseño-tareas"></ul>
 
+        </section>
+        
+        <section class="contenedor-derecho">
+            <textarea class="notas"></textarea>
+            <button class="boton-usuario extras">Guardar</button>
         </section>
         
     </section>
